@@ -11,7 +11,7 @@ git clone https://github.com/web-app-tutoria-2024-01/web-app-tutoria.git
 ## Como rodar
 No terminal da sua IDE, abra a pasta do projeto com o comando, em seguida dê o npm install e o npm run dev:
 ```sh
-cd web_site_tutoria,
+cd web_site_tutoria
 npm install
 npm run dev
 
