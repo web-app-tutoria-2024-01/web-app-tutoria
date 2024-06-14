@@ -1,0 +1,9 @@
+.TitleStep{
+   font-family: var(--secondary-font) !important;
+   font-size: 48px !important;
+}
+
+.description{
+   font-family: var(--third-font);
+   font-size: 20px;
+}

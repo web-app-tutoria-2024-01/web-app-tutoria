@@ -1,0 +1,27 @@
+[
+   {
+      "id": 1,
+      "name": "Verifique a Fonte",
+      "description": "Você deve analisar a fonte criticamente. Alguns pontos devem ser levados em consideração, por exemplo, verifique se o URL do site parece suspeito, se a fonte possui embasamento em dados do governo, acadêmicos ou de instituições confiáveis."
+   },
+   {
+      "id": 2,
+      "name": "Avalie Aspectos Emocionais",
+      "description": "Não se deixe enganar pelas suas emoções. Notícias falsas são desenvolvidas para gerar uma resposta emocional no leitor, seja positiva ou negativa. Elas usam clickbaits ou chamadas sensacionalistas para atrair a sua atenção e induzi-lo a compartilhar."
+   },
+   {
+      "id": 3,
+      "name": "Encontre evidências",
+      "description": "Certifique-se que a notícia possua evidências concretas antes de compartilhar. Você pode pesquisar a chamada da notícia e ver se existem outras com semelhantes em fontes conhecidas e confiáveis. Uma regra é ter ao menos duas fontes consonantes para garantir a credibilidade da notícia."
+   },
+   {
+      "id": 4,
+      "name": "Procure por falhas",
+      "description": "Leia a notícia e busque por erros ortográficos, gramaticais ou de concordância. Também atente-se a datas e informações genéricas. Pesquise qual a reputação e formação do autor da notícia ou da entidade que publicou a informação."
+   },
+   {
+      "id": 5,
+      "name": "Examine o conteúdo",
+      "description": "Não existe apenas fake news com o objetivo de enganar o leitor, então identifique se o conteúdo que você está pensando em compartilhar não possui um caráter de sátira ou é um editorial, ou seja, baseado em conjecturas do autor."
+   }
+]

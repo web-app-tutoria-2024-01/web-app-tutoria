@@ -1,0 +1,37 @@
+[
+   {
+      "id": 1,
+      "name": "SÁTIRA OU PARÓDIA",
+      "description": "Tem viés humorístico, não tem o objetivo de enganar ou gerar danos, mas pode causar."
+   },
+   {
+      "id": 2,
+      "name": "FALSA CONEXÃO",
+      "description": "Quando a chamada, recursos visuais ou legendas não dão suporte ao conteúdo em si."
+   },
+   {
+      "id": 3,
+      "name": "FALSO CONTEXTO",
+      "description": "Quando uma notícia verdadeira é retirada de contexto e veiculada com uma informação errada."
+   },
+   {
+      "id": 4,
+      "name": "CONTEÚDO ENGANOSO",
+      "description": "É o uso de mentiras para causar danos ou desinformação a um indivíduo, empresa, figura pública e afins."
+   },
+   {
+      "id": 5,
+      "name": "CONTEÚDO IMPOSTOR",
+      "description": "É a criação de perfis falsos de figuras ou entidades verdadeiras, com o objetivo de enganar terceiros."
+   },
+   {
+      "id": 6,
+      "name": "CONTEÚDO FABRICADO",
+      "description": "São notícias 100% falsas, desde suas fontes até as suas informações, geralmente usadas para fins políticos."
+   },
+   {
+      "id": 7,
+      "name": "CONTEÚDO MANIPULADO",
+      "description": "É a manipulação áudios, imagens ou vídeos por meio de IA ou outras ferramentas de edição com o objetivo de desinformar."
+   }
+]
