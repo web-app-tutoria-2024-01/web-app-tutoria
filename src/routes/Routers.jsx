@@ -5,7 +5,7 @@ export const Routers = () => {
    return (
       <Routes>
          <Route path={"/"} element={<BasicLayout/>}>
-            <Route path="/fakenews" element={<FakeNewsPage/>} />
+            <Route index element={<FakeNewsPage/>} />
          </Route>
       </Routes>
       
