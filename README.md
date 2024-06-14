@@ -26,3 +26,10 @@ E depois suba sua branch para o repositório remoto, para alguém abrir um Pull 
 ```bash
 git push origin suaBranch
 ```
+## Tecnologias Utilizadas
+- [React](https://react.dev/);
+- [Vite](https://vitejs.dev/guide/);
+- [Chakra-UI](https://v2.chakra-ui.com/);
+- [Framer-Motion](https://www.framer.com/motion/);
+- Node.js;
+
