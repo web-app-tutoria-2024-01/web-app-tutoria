@@ -4,7 +4,7 @@
 
 Escreva no git bash da sua máquina o comando:
 ```bash 
-git clone "url do reporitório" 
+git clone https://github.com/web-app-tutoria-2024-01/web-app-tutoria.git
 
 ```
 
