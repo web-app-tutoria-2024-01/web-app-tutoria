@@ -1,0 +1,13 @@
+.Font{
+   font-family: var(--fifth-font);
+   font-weight: 900;
+   font-style: italic;
+}
+.MotionText{
+   font-family: var(--primary-font);
+   font-weight: 400;
+   font-size: 30px ;
+   max-width: 30em;
+   margin-bottom: 10vh;
+
+}

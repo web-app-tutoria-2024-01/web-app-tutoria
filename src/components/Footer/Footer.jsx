@@ -2,8 +2,6 @@ import { Box, Divider, Stack, Text, VStack } from "@chakra-ui/react"
 import style from './Footer.module.css'
 import { Link } from "react-router-dom"
 
-
-
 export const Footer = () => {
    return (
       <>
@@ -21,9 +19,9 @@ export const Footer = () => {
                className={style.LinksContainer}
 
             >
-               <Link to={"/"} style={{ textDecoration: 'none', color: 'gray.200' }}>Saiba Mais</Link>
-               <Link to={"/"}  style={{ textDecoration: 'none', color: 'gray.200' }}>Sobre Nós</Link>
-               <Link to={"/"} style={{ textDecoration: 'none', color: 'gray.200' }}>Workshop</Link>
+               <Link target={"blank"} to={"https://www.instagram.com/p/DBBfffKp-cu/?igsh=MTd5czBkYnV1MTNiZQ=="} style={{ textDecoration: 'none', color: 'gray.200' }}>Saiba Mais</Link>
+               <Link target={"blank"} to={"https://aranoua.ifam.edu.br/"}  style={{ textDecoration: 'none', color: 'gray.200' }}>Projeto Aranouá</Link>
+               <Link target={"blank"} to={"https://www.even3.com.br/21-semana-nacional-de-ciencia-e-tecnologia-snct-501497/"} style={{ textDecoration: 'none', color: 'gray.200' }}>Workshop</Link>
             </Stack>
          </VStack>
          </Box>

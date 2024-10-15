@@ -2,22 +2,38 @@
    {
       "id": 1,
       "name": "Verifique a Fonte",
-      "description": "Você deve analisar a fonte criticamente. Alguns pontos devem ser levados em consideração, por exemplo, verifique se o URL do site parece suspeito, se a fonte possui embasamento em dados do governo, acadêmicos ou de instituições confiáveis."
+      "description": "Você deve analisar a fonte criticamente. Alguns pontos devem ser levados em consideração, por exemplo, verifique se o URL do site parece suspeito, se a fonte possui embasamento em dados do governo, acadêmicos ou de instituições confiáveis.",
+      "image": {
+         "src": "/steps/fontes_confiaveis.png",
+         "legenda": "Procure sempre as fontes, e quando houver, procure a relevância e confiabilidade dessas fontes, antes de compartilhar conteúdos."
+      }
    },
    {
       "id": 2,
       "name": "Avalie Aspectos Emocionais",
-      "description": "Não se deixe enganar pelas suas emoções. Notícias falsas são desenvolvidas para gerar uma resposta emocional no leitor, seja positiva ou negativa. Elas usam clickbaits ou chamadas sensacionalistas para atrair a sua atenção e induzi-lo a compartilhar."
+      "description": "Não se deixe enganar pelas suas emoções. Notícias falsas são desenvolvidas para gerar uma resposta emocional no leitor, seja positiva ou negativa. Elas usam clickbaits ou chamadas sensacionalistas para atrair a sua atenção e induzi-lo a compartilhar.",
+      "image": {
+         "src": "/steps/apelo_emocional.png",
+         "legenda": "Checagem de fatos do Governo de São Paulo. Fonte: Reprodução © Governo Estadual de São Paulo"
+      }
    },
    {
       "id": 3,
       "name": "Encontre evidências",
-      "description": "Certifique-se que a notícia possua evidências concretas antes de compartilhar. Você pode pesquisar a chamada da notícia e ver se existem outras com semelhantes em fontes conhecidas e confiáveis. Uma regra é ter ao menos duas fontes consonantes para garantir a credibilidade da notícia."
+      "description": "Certifique-se que a notícia possua evidências concretas antes de compartilhar. Você pode pesquisar a chamada da notícia e ver se existem outras com semelhantes em fontes conhecidas e confiáveis. Uma regra é ter ao menos duas fontes consonantes para garantir a credibilidade da notícia.",
+      "image": {
+         "src": "/steps/evidencias_fakenews.jpg",
+         "legenda": "Fake News desmentida pelo Governo de São Paulo. O período da Covid-19 foi muito propício a circulação de desinformação. Fonte: Reprodução © Governo Estadual de São Paulo"
+      }
    },
    {
       "id": 4,
       "name": "Procure por falhas",
-      "description": "Leia a notícia e busque por erros ortográficos, gramaticais ou de concordância. Também atente-se a datas e informações genéricas. Pesquise qual a reputação e formação do autor da notícia ou da entidade que publicou a informação."
+      "description": "Leia a notícia e busque por erros ortográficos, gramaticais ou de concordância. Também atente-se a datas e informações genéricas. Pesquise qual a reputação e formação do autor da notícia ou da entidade que publicou a informação.",
+      "image": {
+         "src": "/steps/imagem_erro_ortografico.jpg",
+         "legenda": "Além do meio de compartilhamento, a presença de eventuais erros ortográficos pode ser indício de uma fake news. Fonte: Reprodução © Portal R7."
+      }
    },
    {
       "id": 5,

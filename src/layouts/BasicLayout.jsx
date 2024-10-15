@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Header, Footer, Content } from "../components";
+import HeroSection from "../components/HeroSection/HeroSection";
 
 
 export const BasicLayout = () => {
@@ -7,6 +8,7 @@ export const BasicLayout = () => {
       <>
       <Header />
       <Content>
+         <HeroSection/>
          <Outlet />
       </Content>
       <Footer />

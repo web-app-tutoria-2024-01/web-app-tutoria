@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, useBoolean, useBreakpointValue, useDisclosure } from "@chakra-ui/react"
-import paperTexture from '../../assets/paper_texture.jpg'
+import { Box, Flex, Heading, useBoolean, useBreakpointValue, useDisclosure, Text, Image } from "@chakra-ui/react";
+import paperTexture from '../../assets/paper_texture.jpg';
 import { motion } from "framer-motion";
 import style from './TypesBox.module.css'
+
 const MotionBox = motion(Box);
 
 export const TypeBox = (props) => {
@@ -14,7 +15,7 @@ export const TypeBox = (props) => {
     setIsBackdropVisible.toggle();
   };
 
-  const boxWidth = useBreakpointValue({ base: '90%', md: isOpen ? '65%' : '50%' });
+  const boxWidth = useBreakpointValue({ base: '90%', md: isOpen ? '75%' : '70%' })
 
   return (
     <>
@@ -48,12 +49,32 @@ export const TypeBox = (props) => {
         >
           <Flex flexDirection="column" alignItems="center" justifyContent="center" gap={4}>
             <Heading mt="30px" className={style.TitleStep} textAlign={"center"} flexDirection={"column"}>
-               <h1 style={{display: isOpen && "none"}}>#{type.id}</h1>{type.name}
+              <h1 style={{ display: isOpen && "none" }}>#{type.id}</h1>
+              {type.name}
             </Heading>
+            
             {isOpen && (
-              <Box mt={4} textAlign="center" className={style.description}>
-                {type.description}
-              </Box>
+              <>
+                <Box mt={4} textAlign="center" className={style.description}>
+                  {type.description}
+                </Box>
+                {console.log(type)}
+                {type.image && (
+                  <Flex flexDirection="column" alignItems="center" mt={4}>
+                    <Image
+                      src={type.image.src}
+                      alt={type.name}
+                      width="20em"
+                      borderRadius="10px"
+                      mb={4}
+                      border={"1px solid black"}
+                    />
+                    <Text textAlign="center" fontStyle="italic">
+                      {type.image.legenda}
+                    </Text>
+                  </Flex>
+                )}
+              </>
             )}
           </Flex>
         </MotionBox>

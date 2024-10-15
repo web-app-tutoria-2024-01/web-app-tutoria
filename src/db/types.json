@@ -2,12 +2,20 @@
    {
       "id": 1,
       "name": "SÁTIRA OU PARÓDIA",
-      "description": "Tem viés humorístico, não tem o objetivo de enganar ou gerar danos, mas pode causar."
+      "description": "Tem viés humorístico, não tem o objetivo de enganar ou gerar danos, mas pode causar.",
+      "image": {
+         "src": "/types/onion_drugs_manchete.jpg",
+         "legenda": "Manchete do Jornal The Onion, conhecido Jornal Americano com manchetes satíricas e de humor ácido sobre política e economia dos Estados Unidos. Fonte: Reprodução © NPR"
+      }
    },
    {
       "id": 2,
       "name": "FALSA CONEXÃO",
-      "description": "Quando a chamada, recursos visuais ou legendas não dão suporte ao conteúdo em si."
+      "description": "Quando a chamada, recursos visuais ou legendas não dão suporte ao conteúdo em si.",
+      "image": {
+         "src": "/types/clickbait_pablo_vittar.jpeg",
+         "legenda": "Muitas vezes, portais e páginas de fofoca usam esse recurso, num famoso artifício conhecido como clickbait ou caça-clique. Fonte: Reprodução © Turbineseusite"
+      }
    },
    {
       "id": 3,
@@ -17,21 +25,37 @@
    {
       "id": 4,
       "name": "CONTEÚDO ENGANOSO",
-      "description": "É o uso de mentiras para causar danos ou desinformação a um indivíduo, empresa, figura pública e afins."
+      "description": "É o uso de mentiras para causar danos ou desinformação a um indivíduo, empresa, figura pública e afins.",
+      "image": {
+         "src": "/types/fabiane_de_jesus.webp",
+         "legenda": "Uma desinformação em um portal irresponsável no Facebook mostrava um retrato falado de uma suposta bruxa que sequestrava crianças. Fabiane de Jesus foi falsamente apontada como a suposta bruxa - que não passava de um boato online - e foi linchada por vizinhos, tendo sofrido um desfecho trágico. Fonte: Reprodução © Época"
+      }
    },
    {
       "id": 5,
       "name": "CONTEÚDO IMPOSTOR",
-      "description": "É a criação de perfis falsos de figuras ou entidades verdadeiras, com o objetivo de enganar terceiros."
+      "description": "É a criação de perfis falsos de figuras ou entidades verdadeiras, com o objetivo de enganar terceiros.",
+      "image": {
+         "src": "/types/conteudo_impostor.jpg",
+         "legenda": "Notícias falsas também podem fraudar interface de sites confiáveis, tornando a reprodução ainda mais convincente. Fonte: Reprodução © G1"
+      }
    },
    {
       "id": 6,
       "name": "CONTEÚDO FABRICADO",
-      "description": "São notícias 100% falsas, desde suas fontes até as suas informações, geralmente usadas para fins políticos."
+      "description": "São notícias 100% falsas, desde suas fontes até as suas informações, geralmente usadas para fins políticos.",
+      "image": {
+         "src": "/types/conteudo_fabricado.png",
+         "legenda": "Conteúdos fabricados e enganosos são compartilhados em uma frequência muito maior em períodos de calamidade pública, como foi a Pandemia de Covid-19. Fonte: Reprodução © Foca nas Mídias"
+      }
    },
    {
       "id": 7,
       "name": "CONTEÚDO MANIPULADO",
-      "description": "É a manipulação áudios, imagens ou vídeos por meio de IA ou outras ferramentas de edição com o objetivo de desinformar."
+      "description": "É a manipulação áudios, imagens ou vídeos por meio de IA ou outras ferramentas de edição com o objetivo de desinformar.",
+      "image": {
+         "src": "/types/exemplo_deepfake.gif",
+         "legenda": "Trecho de Vídeo com uma demonstração de Deep Fake com o rosto do ator hollywoodiano Tom Cruise. Fonte: Reprodução © Substack"
+      }
    }
 ]
