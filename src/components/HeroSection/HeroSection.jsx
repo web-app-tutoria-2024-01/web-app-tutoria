@@ -1,4 +1,4 @@
-import { Box, Text, Image } from '@chakra-ui/react';
+import { Box, Text, Image, background } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import img from '../../assets/fake_news_icon.png'
 import styles from './HeroSection.module.css'
@@ -12,7 +12,7 @@ const HeroSection = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       w="95%"
-      h="65vh"
+      h={{base: "50vh", md: "65vh"}}
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -20,12 +20,13 @@ const HeroSection = () => {
       <Image
         src={img}
         alt="Hero Image"
-        w="20em" // adjust the image width
+        w={{base: "10em", md: "20em"}} // adjust the image width
         objectFit="cover"
         borderRadius="10px"
+        ml={"20px"}
       />
       <Text
-        fontSize="4xl" // increase the text size
+        fontSize={{base: "medium", md: "xx-large"}} // increase the text size
         fontWeight="bold"
         className={styles.Font}
         color="#090C02"
@@ -38,12 +39,13 @@ const HeroSection = () => {
     <MotionText
          className={styles.MotionText}
          whileHover={{
-               color: '#E6EED6',
+               color: '#fff',
                textDecoration: 'underline',
                fontStyle: 'italic',
                transition: { duration: 2 },
          }}
-         ml={4}
+         m={4}
+         fontSize={{base: "20px", md: "35px"}}
          bg={"#A72608"}
          color={"#fff"}>
          Nesse guia simplificado, apresentamos pontos importantes a serem avaliados antes de se compartilhar alguma notícia
