@@ -10,7 +10,7 @@ export const FakeNewsPage = () => {
 
    return (
      <Flex flexDirection={"column"} backgroundColor={"#F7F2B5"}>
-       <Flex flexDirection={"column"} width={{ base: "100%", md: "80%" }} margin={"0 auto"}>
+       <Flex flexDirection={"column"} width={{ base: "100%", md: "80%" }} margin={"0 auto"} mt={"10vh"}>
          <Divider border={"1px double black"} />
          <Heading textAlign={"center"} className={style.Font} margin={"2em 0"}>
            O que fazer quando encontrar algum conteúdo suspeito?

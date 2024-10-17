@@ -1,23 +1,22 @@
-import { Box, Flex, Heading, useBoolean, useBreakpointValue, useDisclosure, Text, Image } from "@chakra-ui/react"
+import { Box, Flex, Heading, useBoolean, useBreakpointValue, useDisclosure, Text, Image, Icon } from "@chakra-ui/react"
 import paperTexture from '../../assets/paper_texture.jpg'
 import { motion } from "framer-motion";
-import style from './StepBox.module.css'
-import Lottie from "react-lottie";
-import animationData from '../../assets/animation_click.json'
+import style from './StepBox.module.css';
+import { GiClick } from "react-icons/gi";
 const MotionBox = motion(Box);
 
 export const StepBox = (props) => {
    const { step } = props;
    const { isOpen, onToggle } = useDisclosure();
    const [isBackdropVisible, setIsBackdropVisible] = useBoolean();
- 
+
    const handleClick = () => {
      onToggle();
      setIsBackdropVisible.toggle();
    };
- 
+
    const boxWidth = useBreakpointValue({ base: '90%', md: isOpen ? '65%' : '50%' });
- 
+
    return (
      <>
        {isBackdropVisible && (
@@ -44,23 +43,38 @@ export const StepBox = (props) => {
            initial={{ height: '350px' }}
            animate={{ height: isOpen ? 'auto' : '350px', width: boxWidth }}
            overflow="hidden"
-           position={isOpen ? 'relative' : 'static'}
-           zIndex={isOpen ? 'modal' : 'auto'}
+           position="relative" 
+           zIndex={isOpen ? "modal" : "auto"}
            mb={{ base: '50px', md: '100px' }}
          >
-           <Flex flexDirection="column" alignItems="center" justifyContent="center" gap={4}>
+           {/* Ícone no canto superior direito */}
+           {!isOpen && (
+             <Icon
+               as={GiClick}
+               position="absolute"
+               top="20px"
+               right="20px"
+               size="sm"
+               width="25px"
+               height="25px"
+               aria-label="Toggle Step"
+               zIndex="tooltip" 
+             />
+           )}
+
+           <Flex flexDirection={"column"} alignItems="center" justifyContent="center" gap={4}>
              <Heading mt="30px" className={style.TitleStep} textAlign={"center"} flexDirection={"column"}>
                <h1 style={{ display: isOpen && "none" }}>#{step.id}</h1>{step.name}
              </Heading>
- 
+
              {isOpen && (
                <>
                  <Box mt={4} textAlign="center" className={style.description}>
                    {step.description}
                  </Box>
-                 
+
                  {/* Verifica se a imagem existe e exibe */}
-                 {step.image  && (
+                 {step.image && (
                    <Flex flexDirection="column" alignItems="center" mt={4}>
                      <Image
                        src={step.image.src}  // Caminho da imagem
@@ -82,4 +96,4 @@ export const StepBox = (props) => {
        </Flex>
      </>
    );
- };
+};

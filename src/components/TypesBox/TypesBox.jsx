@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, useBoolean, useBreakpointValue, useDisclosure, Text, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, useBoolean, useBreakpointValue, useDisclosure, Text, Image, Icon } from "@chakra-ui/react";
 import paperTexture from '../../assets/paper_texture.jpg';
 import { motion } from "framer-motion";
 import style from './TypesBox.module.css'
+import { GiClick } from "react-icons/gi";
 
 const MotionBox = motion(Box);
 
@@ -43,10 +44,23 @@ export const TypeBox = (props) => {
           initial={{ height: '350px' }}
           animate={{ height: isOpen ? 'auto' : '350px', width: boxWidth }}
           overflow="hidden"
-          position={isOpen ? 'relative' : 'static'}
-          zIndex={isOpen ? 'modal' : 'auto'}
-          mb={{ base: '50px', md: '100px' }} // Ajuste da margem inferior para diferentes tamanhos de tela
+          position="relative" 
+          zIndex={isOpen ? "modal" : "auto"}
+          mb={{ base: '50px', md: '100px' }} 
         >
+         {!isOpen && (
+             <Icon
+               as={GiClick}
+               position="absolute"
+               top="20px"
+               right="20px"
+               size="sm"
+               width="25px"
+               height="25px"
+               aria-label="Toggle Step"
+               zIndex="tooltip" 
+             />
+           )}
           <Flex flexDirection="column" alignItems="center" justifyContent="center" gap={4}>
             <Heading mt="30px" className={style.TitleStep} textAlign={"center"} flexDirection={"column"}>
               <h1 style={{ display: isOpen && "none" }}>#{type.id}</h1>
@@ -58,7 +72,6 @@ export const TypeBox = (props) => {
                 <Box mt={4} textAlign="center" className={style.description}>
                   {type.description}
                 </Box>
-                {console.log(type)}
                 {type.image && (
                   <Flex flexDirection="column" alignItems="center" mt={4}>
                     <Image
