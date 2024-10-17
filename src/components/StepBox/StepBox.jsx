@@ -47,7 +47,6 @@ export const StepBox = (props) => {
            zIndex={isOpen ? "modal" : "auto"}
            mb={{ base: '50px', md: '100px' }}
          >
-           {/* Ícone no canto superior direito */}
            {!isOpen && (
              <Icon
                as={GiClick}
